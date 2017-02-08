@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+                android:id="@+id/home_titleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/main_bg_color1"
+            app:tabIndicatorColor="@color/pink"
+            app:tabSelectedTextColor="@color/white1"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <!--<android.support.design.widget.CoordinatorLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/home_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/home_fab"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_add_24dp"
+                app:backgroundTint="@color/main_bg_color1"
+                app:borderWidth="0dp"
+                app:layout_anchor="@id/home_vp"
+                app:layout_anchorGravity="end|bottom"
+                app:layout_behavior="com.example.nanchen.aiyaschoolpush.behavior.FloatingActionButtonScrollBehavior"/>
+
+
+        <!--</android.support.design.widget.CoordinatorLayout>-->
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

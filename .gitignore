@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+build/
+.gradle/
+app/build/
+easeUI_CN/build/
+php/AiYaSchoolPush/info/pic/
+php/AiYaSchoolPush/info/video/
+.idea/

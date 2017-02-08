@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                xmlns:widget="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mRL_Item"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/background_myspace">
+
+    <LinearLayout
+        android:id="@+id/mLL_TopLine_Container"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/mView_TopLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey6"/>
+    </LinearLayout>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.RippleView
+        android:id="@+id/mRV_Item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        widget:rv_color="@color/white1"
+        widget:rv_type="simpleRipple"
+        widget:rv_zoom="false">
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.RoundImageView
+            android:id="@+id/mRIV_HeadImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar"
+            imagecontrol:border_thickness="3dp"
+            imagecontrol:image_mode="image_round_with_circle"/>
+
+        <TextView
+            android:id="@+id/mTv_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@id/mRIV_HeadImage"
+            android:text=""
+            android:textColor="@color/gray9"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/mTv_Vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@id/mTv_UserName"
+            android:src="@drawable/teacher_vip_level1"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/mTv_UserSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="72dp"
+            android:layout_toRightOf="@id/mRIV_HeadImage"
+            android:ellipsize="end"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="@color/matchBriefTxt"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/mRL_Personal_Info"
+            android:layout_width="98dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/mTv_Personal_Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/gray"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/mIv_RightArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_arrow_right_16x26"/>
+        </RelativeLayout>
+    </com.example.nanchen.aiyaschoolpush.ui.view.RippleView>
+
+    <LinearLayout
+        android:id="@+id/mLL_BottomLine_Container"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/mView_BottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey6"/>
+    </LinearLayout>
+
+</RelativeLayout>

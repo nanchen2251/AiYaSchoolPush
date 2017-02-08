@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/white1" android:endColor="@color/white1" android:angle="90.0" android:centerColor="@color/white1"/>
+            <padding android:left="2dp" android:top="1dp" android:right="2dp" android:bottom="1dp"/>
+            <corners android:topLeftRadius="12dp" android:topRightRadius="12dp" android:bottomLeftRadius="12dp" android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape>
+            <gradient android:startColor="@color/white1" android:endColor="@color/white1" android:angle="90.0" android:centerColor="@color/white1"/>
+            <padding android:left="2dp" android:top="1dp" android:right="2dp" android:bottom="1dp"/>
+            <corners android:topLeftRadius="12dp" android:topRightRadius="12dp" android:bottomLeftRadius="12dp" android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:startColor="@color/white1" android:endColor="@color/white1" android:centerColor="@color/white1" android:angle="90.0"/>
+            <padding android:left="2dp" android:top="1dp" android:right="2dp" android:bottom="1dp"/>
+            <corners android:topLeftRadius="12dp" android:topRightRadius="12dp" android:bottomLeftRadius="12dp" android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+</selector>

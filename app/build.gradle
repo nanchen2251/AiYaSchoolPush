@@ -1,0 +1,181 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.nanchen.aiyaschoolpush"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 23
+        versionName "2.2.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+
+        release {
+            // 是否进行dex优化
+            zipAlignEnabled false
+
+            // 是否进行混淆
+            minifyEnabled false
+            // 支持删除一些没有用的资源
+            shrinkResources false
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    productFlavors {
+//        android.applicationVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                output.outputFile = new File("AiYa-SchoolPush" + "-v" +
+//                        defaultConfig.versionName + ".apk");
+//            }
+//        }
+//    }
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    // 使用百度定位需要
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // mob  message
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile files('libs/MobTools-2016.0714.1402.jar')
+    compile files('libs/MobCommons-2016.0714.1402.jar')
+    // material design
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    // photo
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // rx
+    compile 'io.reactivex:rxjava:1.2.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    // bottom tab
+    compile 'com.github.armcha:SpaceNavigationView:1.4.1'
+    // 字母导航栏
+    compile 'com.bigkoo:quicksidebar:1.0.3'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    // 自动轮播
+    compile 'com.android.support:support-v4:+'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    // 开源弹出式Toast
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
+        // exclusion is not neccessary, but generally a good idea.
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+    //炫酷的dialog
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar'
+    // 例子动画
+    compile 'me.wangyuwei:ParticleView:1.0.5'
+    // 闪动加载
+    compile 'com.elyeproj.libraries:loaderviewlibrary:1.2.1'
+    // 另一种方式的Dialog弹出方式
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar'
+    // 带记忆功能的搜索框
+    compile 'com.github.mancj:MaterialSearchBar:0.3.1'
+    // 奇特的RecyclerView
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.7.0'
+    // 进度条水平方向
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    // 弹起式日期控件
+    compile 'com.philliphsu:bottomsheetpickers:2.0.0'
+    // 支持下拉刷新和上拉加载的RecyclerView
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    // Material Design风格的输入框开源
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    // 环信集成相关
+    compile files('libs/parse-android-1.13.0.jar')
+    compile files('libs/bolts-tasks-1.4.0.jar')
+    // LeakCanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    // multidex
+    compile 'com.android.support:multidex:1.0.1'
+    // 网易七鱼客服
+    compile 'com.qiyukf.unicorn:unicorn:2.9.0'
+    compile 'com.alibaba:fastjson:1.2.20'
+    // 网络访问框架okgo 封装okhttp
+    compile 'com.lzy.net:okgo:+'
+    //版本号使用 + 可以自动引用最新版
+
+    // 圆形image
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    // 九宫格图片展示和仿微信图片选择
+    compile 'com.lzy.widget:ninegridview:0.2.0'
+    compile 'com.lzy.widget:imagepicker:+'
+    //最新版本
+
+    // material dialog
+    compile 'com.afollestad.material-dialogs:commons:0.9.1.0'
+    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+    compile project(':easeUI_CN')
+    compile 'com.mabeijianxi:small-video-record:1.0.8'
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
+
+}
+repositories {
+    maven {
+        url 'https://dl.bintray.com/wangyuwei/maven'
+    }
+}
+
+
+
+
+

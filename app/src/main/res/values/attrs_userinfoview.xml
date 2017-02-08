@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabStripView">
+        <attr name="navigateTabTextColor" format="color|reference"/>
+        <attr name="navigateTabSelectedTextColor" format="color|reference"/>
+        <attr name="containerId" format="integer|reference"/>
+        <attr name="navigateTabTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="WavyLineView">
+        <attr name="period" format="float"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="amplitude" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="UserInfoViewStyle">
+		<!--头像图标 -->
+        <attr name="image_head_image" format="reference"/>
+        <!--右侧个人资料箭头图标 -->
+        <attr name="image_right_arrow" format="reference"/>
+           
+        <!--姓名文本 -->
+        <attr name="text_user_name" format="reference|string"/>
+        <!--个人签名文本 -->
+        <attr name="text_user_signature" format="reference|string"/>
+        <!--个人资料文本 -->
+        <attr name="text_personal_info" format="reference|string"/>
+        <!--个人级别文本 -->
+        <attr name="text_level" format="reference|string"/>
+        <!--个人收藏次数文本 -->
+        <attr name="text_favorite" format="reference|string"/>
+       
+        <!--姓名字体大小 -->
+        <attr name="fontsize_user_name" format="reference|integer"/>
+        <!--个人签名字体大小 -->
+        <attr name="fontsize_user_signature_fontsize" format="reference|integer"/>
+        <!--个人资料字体大小-->
+        <attr name="fontsize_personal_info" format="reference|integer"/>
+        <!--等级字体大小 -->
+        <attr name="fontsize_level" format="reference|integer"/>
+        <!--收藏次数字体大小 -->
+        <attr name="fontsize_favorite" format="reference|integer"/>
+        
+        <!--左侧文本字体颜色 -->
+        <attr name="fontcolor_user_name" format="reference|color"/>
+        <!--中间文本字体颜色 -->
+        <attr name="fontcolor_user_signature" format="reference|color"/>
+        <!--右侧文本字体颜色-->
+        <attr name="fontcolor_personal_info" format="reference|color"/>
+        <!--等级文本字体颜色 -->
+        <attr name="fontcolor_level" format="reference|color"/>
+        <!--收藏次数文本字体颜色 -->
+        <attr name="fontcolor_favorite" format="reference|color"/>       
+
+        <!-- 设置头像是否可以单击 -->
+        <attr name="clickable_item" format="reference|boolean"/>
+        
+        <!-- 设置头像是否可以单击 -->
+        <attr name="clickable_head_image" format="reference|boolean"/>
+
+        <!-- 设置右侧个人资料是否可以单击 -->
+        <attr name="clickable_personal_info" format="reference|boolean"/>
+        
+        <attr name="user_info_view_model"> 
+            <enum name="model_my_self" value="0"/>  <!--我 -->
+            <enum name="model_personal_info_settings" value="1"/> <!--个人资料(自己) -->
+            <enum name="model_my_memories" value="2"/> <!--我的记忆 -->
+            <enum name="model_other_personal_info" value="3"/> <!--个人资料(他人) -->
+        </attr>
+
+    </declare-styleable>    
+</resources>

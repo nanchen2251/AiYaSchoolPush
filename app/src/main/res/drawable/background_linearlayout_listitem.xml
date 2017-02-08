@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/white5" android:endColor="@color/white5" android:centerColor="@color/white5" android:angle="90.0"/>
+            <padding android:left="@dimen/dimens_item_padding_left" android:top="@dimen/dimens_item_padding_top" android:right="@dimen/dimens_item_padding_right" android:bottom="@dimen/dimens_item_padding_bottom"/>
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape>
+            <gradient android:startColor="@color/white5" android:endColor="@color/white5" android:centerColor="@color/white5" android:angle="90.0"/>
+            <padding android:left="@dimen/dimens_item_padding_left" android:top="@dimen/dimens_item_padding_top" android:right="@dimen/dimens_item_padding_right" android:bottom="@dimen/dimens_item_padding_bottom"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:startColor="@color/white1" android:endColor="@color/white1" android:centerColor="@color/white1" android:angle="90.0"/>
+            <padding android:left="@dimen/dimens_item_padding_left" android:top="@dimen/dimens_item_padding_top" android:right="@dimen/dimens_item_padding_right" android:bottom="@dimen/dimens_item_padding_bottom"/>
+        </shape>
+    </item>
+</selector>

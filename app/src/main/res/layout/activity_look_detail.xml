@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_look_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    tools:context="com.example.nanchen.aiyaschoolpush.ui.activity.LookDetailActivity">
+
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_titleBar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white1"
+        android:paddingTop="5dp">
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/detail_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:text="\ue628"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/gray19"
+            android:textSize="24sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/detail_send"
+            android:layout_toStartOf="@+id/detail_send"
+            android:background="@drawable/circle_detial_edit_bg">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_edit"
+                android:background="@color/transparent"
+                android:hint="写评论..."
+                android:textSize="14sp"
+                android:textColorHint="@color/gray3"
+                android:textColor="@color/srs_text"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textCursorDrawable="@null"
+                android:minHeight="40dp"
+                android:maxHeight="85dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/detail_send_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_edit"
+                android:gravity="top"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/orange"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_lv"
+        android:layout_below="@+id/detail_titleBar"
+        android:layout_above="@id/detail_bottom"
+        android:fadingEdge="none"
+        android:background="@color/main_bg_color"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

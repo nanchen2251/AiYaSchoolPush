@@ -1,0 +1,143 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* EaseUI.iml
+* LICENSE
+* README.md
+* build.xml
+* hyphenate.sh
+* ic_launcher-web.png
+* proguard-project.txt
+* simpledemo\
+* simpledemo\.project
+* simpledemo\AndroidManifest.xml
+* simpledemo\ic_launcher-web.png
+* simpledemo\proguard-project.txt
+* simpledemo\project.properties
+* simpledemo\res\
+* simpledemo\res\color\
+* simpledemo\res\color\em_main_botton_text_color.xml
+* simpledemo\res\drawable-hdpi\
+* simpledemo\res\drawable-hdpi\em_contact_list_normal.png
+* simpledemo\res\drawable-hdpi\em_contact_list_selected.png
+* simpledemo\res\drawable-hdpi\em_conversation_normal.png
+* simpledemo\res\drawable-hdpi\em_conversation_selected.png
+* simpledemo\res\drawable-hdpi\em_settings_normal.png
+* simpledemo\res\drawable-hdpi\em_settings_selected.png
+* simpledemo\res\drawable-hdpi\em_unread_count_bg.9.png
+* simpledemo\res\drawable-hdpi\ic_launcher.png
+* simpledemo\res\drawable-mdpi\
+* simpledemo\res\drawable-mdpi\ic_launcher.png
+* simpledemo\res\drawable-xhdpi\
+* simpledemo\res\drawable-xhdpi\ic_launcher.png
+* simpledemo\res\drawable-xxhdpi\
+* simpledemo\res\drawable-xxhdpi\ic_launcher.png
+* simpledemo\res\drawable\
+* simpledemo\res\drawable\em_main_bottom_item_bg.xml
+* simpledemo\res\drawable\em_tab_chat_bg.xml
+* simpledemo\res\drawable\em_tab_contact_list_bg.xml
+* simpledemo\res\drawable\em_tab_setting_bg.xml
+* simpledemo\res\layout\
+* simpledemo\res\layout\activity_chat.xml
+* simpledemo\res\layout\activity_login.xml
+* simpledemo\res\layout\activity_main.xml
+* simpledemo\res\layout\fragment_settings.xml
+* simpledemo\res\values-w820dp\
+* simpledemo\res\values-w820dp\dimens.xml
+* simpledemo\res\values\
+* simpledemo\res\values\dimens.xml
+* simpledemo\res\values\strings.xml
+* simpledemo\src\
+* simpledemo\src\com\
+* simpledemo\src\com\hyphenate\
+* simpledemo\src\com\hyphenate\easeuisimpledemo\
+* simpledemo\src\com\hyphenate\easeuisimpledemo\DemoApplication.java
+* simpledemo\src\com\hyphenate\easeuisimpledemo\ui\
+* simpledemo\src\com\hyphenate\easeuisimpledemo\ui\ChatActivity.java
+* simpledemo\src\com\hyphenate\easeuisimpledemo\ui\LoginActivity.java
+* simpledemo\src\com\hyphenate\easeuisimpledemo\ui\MainActivity.java
+* simpledemo\src\com\hyphenate\easeuisimpledemo\ui\SettingsFragment.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => easeUI_CN\src\main\AndroidManifest.xml
+* libs\arm64-v8a\libBaiduMapSDK_base_v4_0_0.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_base_v4_0_0.so
+* libs\arm64-v8a\libBaiduMapSDK_map_v4_0_0.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_map_v4_0_0.so
+* libs\arm64-v8a\libBaiduMapSDK_util_v4_0_0.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_util_v4_0_0.so
+* libs\arm64-v8a\libhyphenate.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libhyphenate.so
+* libs\arm64-v8a\libhyphenate_av.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libhyphenate_av.so
+* libs\arm64-v8a\libhyphenate_av_recorder.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libhyphenate_av_recorder.so
+* libs\arm64-v8a\liblocSDK7.so => easeUI_CN\src\main\jniLibs\arm64-v8a\liblocSDK7.so
+* libs\arm64-v8a\libsqlite.so => easeUI_CN\src\main\jniLibs\arm64-v8a\libsqlite.so
+* libs\armeabi\libBaiduMapSDK_base_v4_0_0.so => easeUI_CN\src\main\jniLibs\armeabi\libBaiduMapSDK_base_v4_0_0.so
+* libs\armeabi\libBaiduMapSDK_map_v4_0_0.so => easeUI_CN\src\main\jniLibs\armeabi\libBaiduMapSDK_map_v4_0_0.so
+* libs\armeabi\libBaiduMapSDK_util_v4_0_0.so => easeUI_CN\src\main\jniLibs\armeabi\libBaiduMapSDK_util_v4_0_0.so
+* libs\armeabi\libhyphenate.so => easeUI_CN\src\main\jniLibs\armeabi\libhyphenate.so
+* libs\armeabi\libhyphenate_av.so => easeUI_CN\src\main\jniLibs\armeabi\libhyphenate_av.so
+* libs\armeabi\libhyphenate_av_recorder.so => easeUI_CN\src\main\jniLibs\armeabi\libhyphenate_av_recorder.so
+* libs\armeabi\liblocSDK7.so => easeUI_CN\src\main\jniLibs\armeabi\liblocSDK7.so
+* libs\armeabi\libsqlite.so => easeUI_CN\src\main\jniLibs\armeabi\libsqlite.so
+* libs\BaiduLBS_Android.jar => easeUI_CN\libs\BaiduLBS_Android.jar
+* libs\glide-3.6.1.jar => easeUI_CN\libs\glide-3.6.1.jar
+* libs\google-play-services.jar => easeUI_CN\libs\google-play-services.jar
+* libs\HwPush_SDK_V2705_nomap.jar => easeUI_CN\libs\HwPush_SDK_V2705_nomap.jar
+* libs\hyphenatechat_3.2.2.jar => easeUI_CN\libs\hyphenatechat_3.2.2.jar
+* libs\MiPush_SDK_Client_2_2_19.jar => easeUI_CN\libs\MiPush_SDK_Client_2_2_19.jar
+* libs\org.apache.http.legacy.jar => easeUI_CN\libs\org.apache.http.legacy.jar
+* libs\x86\libhyphenate.so => easeUI_CN\src\main\jniLibs\x86\libhyphenate.so
+* libs\x86\libhyphenate_av.so => easeUI_CN\src\main\jniLibs\x86\libhyphenate_av.so
+* libs\x86\libhyphenate_av_recorder.so => easeUI_CN\src\main\jniLibs\x86\libhyphenate_av_recorder.so
+* libs\x86\libsqlite.so => easeUI_CN\src\main\jniLibs\x86\libsqlite.so
+* lint.xml => easeUI_CN\lint.xml
+* res\ => easeUI_CN\src\main\res\
+* src\ => easeUI_CN\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
