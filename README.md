@@ -39,7 +39,8 @@ V2.2.1<br>
 
 
 以上问题可能还会有补充。
-后面会有一系列的代码重构，可能会使用rx和mvp模式，并且分包，但可能是一段时间后。 
+*后面会有一系列的代码重构，可能会使用rx和mvp模式，并且分包，但可能是一段时间后。 
+
 ##效果演示
 ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/GIF.gif)
 ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/GIF2.gif)
