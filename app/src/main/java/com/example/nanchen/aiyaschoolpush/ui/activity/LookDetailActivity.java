@@ -219,7 +219,6 @@ public class LookDetailActivity extends ActivityBase {
         tv_content.setText(mInfoModel.content);
         tv_like.setText(String.format(Locale.CHINA, "赞 %d", mInfoModel.praiseCount));
         tv_comment.setText(String.format(Locale.CHINA, "评论 %d", mInfoModel.commentCount));
-
         return view;
     }
 
@@ -312,8 +311,6 @@ public class LookDetailActivity extends ActivityBase {
     }
 
     private class MyTextWatcher implements TextWatcher {
-
-
 
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
