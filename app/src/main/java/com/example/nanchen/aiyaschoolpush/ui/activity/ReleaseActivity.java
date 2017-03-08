@@ -186,15 +186,15 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
             int minSize = Math.min(reqHeight,reqWidth);
             int size = (int) (selImageList.get(i).size/1024);//当前图片的大小
             Log.e(TAG,"图片size:"+size+"KB");
-            while (minSize > 400 && size >= 200){
+            while (minSize > 500 && size >= 200){
                 reqWidth /= 2;
                 reqHeight /= 2;
                 minSize = Math.min(reqHeight,reqWidth);
             }
 
             if (reqWidth == 0 || reqHeight == 0){ //拍照返回的宽高为0，这里避免异常
-                reqWidth = 390;
-                reqHeight = 520;
+                reqWidth = 480;
+                reqHeight = 640;
             }
             Log.e(TAG,"第"+i+"个图片压缩后宽："+reqWidth);
             Log.e(TAG,"第"+i+"个图片压缩后高："+reqHeight);
