@@ -7,7 +7,7 @@
     那个时候的我，也许正如现在的你。而我，也还在这条道路上默默前行。
     
 #### * 开源不易，希望给个star或者fork奖励
-#### * 拥抱开源：（https://github.com/nanchen2251）
+#### * 拥抱开源：https://github.com/nanchen2251
 #### * 项目地址：(https://github.com/nanchen2251/AiYaSchoolPush)
 #### * 博客主页：(http://www.cnblogs.com/liushilin/p/5999246.html)
 #### * 开发交流QQ群：（118116509）
