@@ -174,6 +174,7 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
      * 压缩图片为小图片
      */
     private void tryDecodeSmallImg2() {
+        mFiles.clear();// 避免重复点击多次上传图片
         showLoading(this);
         for (int i = 0; i < selImageList.size(); i++) {
             Log.e(TAG,"第"+i+"个图片宽:"+selImageList.get(i).width);
@@ -392,7 +393,6 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
             //添加图片返回
             if (data != null && requestCode == REQUEST_CODE_SELECT) {
                 ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
-                mFiles.clear();
                 selImageList.addAll(images);
 //                for (int i = 0; i < selImageList.size(); i++) {
 //                    mFiles.add(new File(selImageList.get(i).path));
