@@ -36,7 +36,7 @@ V2.2.1<br>
  * [新增]仿微信小视频进入微视频时代
  * [优化]减小apk大小
  
-##目前存在的问题是：
+## 目前存在的问题是：
 1. 视频那个部分手机初始化就蹦，这是so文件不够，需要工作量很大，得自己编译ffmpeg，自己写；
 2. 数据不能实时刷新；
 3. 短信可能收不到，这是我用的第三方短信服务器，毕竟免费，坑自然多；
@@ -51,11 +51,11 @@ V2.2.1<br>
 *以上问题可能还会有补充。
 后面会有一系列的代码重构，可能会使用rx和mvp模式，并且分包，但可能是一段时间后。 
 
-##效果演示
+## 效果演示
 ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/GIF.gif)
 ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/GIF2.gif)
 ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/GIF3.gif)
-##截图<br>
+## 截图<br>
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen1.jpg) 
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen2.jpg) 
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen3.jpg) 
@@ -70,12 +70,12 @@ V2.2.1<br>
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen12.jpg) 
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen13.jpg) 
     
-##关于作者
+## 关于作者
     南尘<br>
     四川成都<br>
     [博客园](http://www.cnblogs.com/liushilin/)
     
-##你也可以请我喝杯咖啡
+## 你也可以请我喝杯咖啡
                **支付宝扫一扫 向我付款**                                             **你也可以微信 向我付款**<br>
    ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/apay.png) 
                   ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/wxpay.png)
