@@ -2,8 +2,10 @@ package com.example.nanchen.aiyaschoolpush.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -30,9 +32,9 @@ import com.example.nanchen.aiyaschoolpush.net.okgo.JsonCallback;
 import com.example.nanchen.aiyaschoolpush.net.okgo.LslResponse;
 import com.example.nanchen.aiyaschoolpush.ui.view.TitleView;
 import com.example.nanchen.aiyaschoolpush.ui.view.WavyLineView;
-import com.example.nanchen.aiyaschoolpush.utils.BitmapUtil;
 import com.example.nanchen.aiyaschoolpush.utils.ScreenUtil;
 import com.example.nanchen.aiyaschoolpush.utils.UIUtil;
+import com.example.nanchen.aiyaschoolpush.utils.compress.Compressor;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
@@ -78,10 +80,21 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
     private Point point;
 
 
+    private Compressor mCompressor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_release);
+
+        mCompressor = new Compressor.Builder(this)
+                .setMaxHeight(640)
+                .setMaxWidth(480)
+                .setQuality(80)
+                .setCompressFormat(CompressFormat.JPEG)
+                .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(
+                        Environment.DIRECTORY_PICTURES).getAbsolutePath())
+                .build();
 
         updatePixel();
         bindView();
@@ -181,28 +194,34 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
             Log.e(TAG,"第"+i+"个图片高:"+selImageList.get(i).height);
             String filePath = selImageList.get(i).path;
 
-            /* 这里假设只对 200k 以上 并且 宽高小的像素 > 400的图片进行裁剪*/
-            reqHeight = selImageList.get(i).height;
-            reqWidth = selImageList.get(i).width;
-            int minSize = Math.min(reqHeight,reqWidth);
-            int size = (int) (selImageList.get(i).size/1024);//当前图片的大小
-            Log.e(TAG,"图片size:"+size+"KB");
-            while (minSize > 500 && size >= 200){
-                reqWidth /= 2;
-                reqHeight /= 2;
-                minSize = Math.min(reqHeight,reqWidth);
-            }
 
-            if (reqWidth == 0 || reqHeight == 0){ //拍照返回的宽高为0，这里避免异常
-                reqWidth = 480;
-                reqHeight = 640;
-            }
-            Log.e(TAG,"第"+i+"个图片压缩后宽："+reqWidth);
-            Log.e(TAG,"第"+i+"个图片压缩后高："+reqHeight);
-            // 对图片压缩尺寸为原来的八分之一
-            Bitmap bitmap = BitmapUtil.decodeSampledBitmapFromFile(filePath,reqWidth,reqHeight);
-            Log.e(TAG,"第"+i+"个图片大小:"+bitmap.getByteCount()/1024+"kb");
-            saveBitmapFile(bitmap,filePath);
+            final File oldFile = new File(filePath);
+            File newFile = mCompressor.compressToFile(oldFile);
+            mFiles.add(newFile);
+
+
+            /* 这里假设只对 200k 以上 并且 宽高小的像素 > 400的图片进行裁剪*/
+//            reqHeight = selImageList.get(i).height;
+//            reqWidth = selImageList.get(i).width;
+//            int minSize = Math.min(reqHeight,reqWidth);
+//            int size = (int) (selImageList.get(i).size/1024);//当前图片的大小
+//            Log.e(TAG,"图片size:"+size+"KB");
+//            while (minSize > 500 && size >= 200){
+//                reqWidth /= 2;
+//                reqHeight /= 2;
+//                minSize = Math.min(reqHeight,reqWidth);
+//            }
+//
+//            if (reqWidth == 0 || reqHeight == 0){ //拍照返回的宽高为0，这里避免异常
+//                reqWidth = 480;
+//                reqHeight = 640;
+//            }
+//            Log.e(TAG,"第"+i+"个图片压缩后宽："+reqWidth);
+//            Log.e(TAG,"第"+i+"个图片压缩后高："+reqHeight);
+//            // 对图片压缩尺寸为原来的八分之一
+//            Bitmap bitmap = BitmapUtil.decodeSampledBitmapFromFile(filePath,reqWidth,reqHeight);
+//            Log.e(TAG,"第"+i+"个图片大小:"+bitmap.getByteCount()/1024+"kb");
+//            saveBitmapFile(bitmap,filePath);
         }
         uploadPic();  // 图片压缩完毕开始上传图片
     }
