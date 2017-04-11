@@ -167,6 +167,7 @@ dependencies {
     compile project(':easeUI_CN')
     compile 'com.mabeijianxi:small-video-record:1.0.8'
     compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    compile 'com.github.nanchen2251:CompressHelper:1.0.2'
 
 }
 repositories {

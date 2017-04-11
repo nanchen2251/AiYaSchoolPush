@@ -34,10 +34,10 @@ import com.example.nanchen.aiyaschoolpush.ui.view.TitleView;
 import com.example.nanchen.aiyaschoolpush.ui.view.WavyLineView;
 import com.example.nanchen.aiyaschoolpush.utils.ScreenUtil;
 import com.example.nanchen.aiyaschoolpush.utils.UIUtil;
-import com.example.nanchen.aiyaschoolpush.utils.compress.Compressor;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
+import com.nanchen.compresshelper.CompressHelper;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -80,16 +80,16 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
     private Point point;
 
 
-    private Compressor mCompressor;
+    private CompressHelper mCompressor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_release);
 
-        mCompressor = new Compressor.Builder(this)
-                .setMaxHeight(640)
-                .setMaxWidth(480)
+        mCompressor = new CompressHelper.Builder(this)
+                .setMaxHeight(960)
+                .setMaxWidth(720)
                 .setQuality(80)
                 .setCompressFormat(CompressFormat.JPEG)
                 .setDestinationDirectoryPath(Environment.getExternalStoragePublicDirectory(
