@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_bg_color"
-    android:orientation="vertical">
+    android:background="@color/main_bg_color">
 
 
     <android.support.design.widget.AppBarLayout
@@ -17,7 +16,7 @@
             android:id="@+id/community_titleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways"/>
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -46,8 +45,7 @@
         android:src="@drawable/ic_add_24dp"
         app:backgroundTint="@color/main_bg_color1"
         app:borderWidth="0dp"
-        app:layout_anchorGravity="end|bottom"
-        app:layout_behavior="com.example.nanchen.aiyaschoolpush.behavior.FloatingActionButtonScrollBehavior"/>
+        app:layout_anchorGravity="end|bottom"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

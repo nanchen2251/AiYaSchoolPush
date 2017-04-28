@@ -36,7 +36,7 @@ import com.example.nanchen.aiyaschoolpush.utils.ScreenUtil;
 import com.example.nanchen.aiyaschoolpush.utils.UIUtil;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
-import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
+import com.lzy.imagepicker.ui.*;
 import com.nanchen.compresshelper.CompressHelper;
 
 import org.greenrobot.eventbus.EventBus;
@@ -363,9 +363,10 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
                             @Override
                             public void onSelection(MaterialDialog dialog, View itemView, int position, CharSequence text) {
                                 if (text.equals("相片")){
+                                    //打开选择,本次允许选择的数量
                                     ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
-                                    Intent intent = new Intent(ReleaseActivity.this, com.lzy.imagepicker.ui.ImageGridActivity.class);
-                                    startActivityForResult(intent, REQUEST_CODE_SELECT);
+                                    Intent intent1 = new Intent(ReleaseActivity.this, com.lzy.imagepicker.ui.ImageGridActivity.class);
+                                    startActivityForResult(intent1, REQUEST_CODE_SELECT);
                                 }else{ // 打开微视频
 
                                     App.initSmallVideo(ReleaseActivity.this.getApplicationContext());
@@ -400,6 +401,7 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
                 Intent intentPreview = new Intent(this, ImagePreviewDelActivity.class);
                 intentPreview.putExtra(ImagePicker.EXTRA_IMAGE_ITEMS, (ArrayList<ImageItem>) adapter.getImages());
                 intentPreview.putExtra(ImagePicker.EXTRA_SELECTED_IMAGE_POSITION, position);
+                intentPreview.putExtra(ImagePicker.EXTRA_FROM_ITEMS,true);
                 startActivityForResult(intentPreview, REQUEST_CODE_PREVIEW);
                 break;
         }
