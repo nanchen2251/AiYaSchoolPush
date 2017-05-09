@@ -172,7 +172,7 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
 
         mEditText = (EditText) findViewById(R.id.release_edit);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.release_recycler);
         selImageList = new ArrayList<>();
         adapter = new ImagePickerAdapter(this, selImageList, maxImgCount);
         adapter.setOnItemClickListener(this);
@@ -414,22 +414,27 @@ public class ReleaseActivity extends ActivityBase implements ImagePickerAdapter.
             //添加图片返回
             if (data != null && requestCode == REQUEST_CODE_SELECT) {
                 ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
-                selImageList.addAll(images);
+                if (images != null){
+                    selImageList.addAll(images);
 //                for (int i = 0; i < selImageList.size(); i++) {
 //                    mFiles.add(new File(selImageList.get(i).path));
 //                }
 
-                //鲁班压缩
+                    //鲁班压缩
 //                compressWithLs(new File(selImageList.get(0).path));
-                adapter.setImages(selImageList);
+                    adapter.setImages(selImageList);
+                }
+
             }
         } else if (resultCode == ImagePicker.RESULT_CODE_BACK) {
             //预览图片返回
             if (data != null && requestCode == REQUEST_CODE_PREVIEW) {
                 ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_IMAGE_ITEMS);
-                selImageList.clear();
-                selImageList.addAll(images);
-                adapter.setImages(selImageList);
+                if (images != null){
+                    selImageList.clear();
+                    selImageList.addAll(images);
+                    adapter.setImages(selImageList);
+                }
             }
         }
     }

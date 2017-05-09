@@ -22,9 +22,13 @@ import com.example.nanchen.aiyaschoolpush.R;
 import com.example.nanchen.aiyaschoolpush.adapter.CommonAdapter;
 import com.example.nanchen.aiyaschoolpush.adapter.ViewHolder;
 import com.example.nanchen.aiyaschoolpush.config.Consts;
+import com.example.nanchen.aiyaschoolpush.helper.event.CommunityEvent;
+import com.example.nanchen.aiyaschoolpush.helper.event.HomeworkEvent;
+import com.example.nanchen.aiyaschoolpush.helper.event.NoticeEvent;
 import com.example.nanchen.aiyaschoolpush.model.User;
 import com.example.nanchen.aiyaschoolpush.model.info.CommentInfoModel;
 import com.example.nanchen.aiyaschoolpush.model.info.InfoModel;
+import com.example.nanchen.aiyaschoolpush.model.info.InfoType;
 import com.example.nanchen.aiyaschoolpush.model.info.UserModel;
 import com.example.nanchen.aiyaschoolpush.net.okgo.JsonCallback;
 import com.example.nanchen.aiyaschoolpush.net.okgo.LslResponse;
@@ -36,6 +40,8 @@ import com.example.nanchen.aiyaschoolpush.utils.SoftInputMethodUtil;
 import com.example.nanchen.aiyaschoolpush.utils.TimeUtils;
 import com.example.nanchen.aiyaschoolpush.utils.UIUtil;
 import com.squareup.picasso.Picasso;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,11 +69,14 @@ public class LookDetailActivity extends ActivityBase {
 
     private String commentText = "";
     private String replyId;
+    private static int infoType;
+    private int commentCount;
 
 
-    public static void start(Context context, InfoModel noticeModel) {
+    public static void start(Context context, InfoModel noticeModel,int type) {
         Intent intent = new Intent(context, LookDetailActivity.class);
         intent.putExtra(EXTRA_KEY, noticeModel);
+        infoType = type;
         context.startActivity(intent);
     }
 
@@ -80,6 +89,7 @@ public class LookDetailActivity extends ActivityBase {
             return;
         }
         mInfoModel = (InfoModel) getIntent().getSerializableExtra(EXTRA_KEY);
+        commentCount = mInfoModel.commentCount;
         initList();
         bindView();
 
@@ -197,6 +207,8 @@ public class LookDetailActivity extends ActivityBase {
         return view;
     }
 
+    TextView tv_comment;
+
     /**
      * 获取信息发布者的View
      */
@@ -205,7 +217,7 @@ public class LookDetailActivity extends ActivityBase {
         CircleImageView avatar = (CircleImageView) view.findViewById(R.id.notice_item_avatar);
         TextView tv_name = (TextView) view.findViewById(R.id.notice_item_name);
         TextView tv_time = (TextView) view.findViewById(R.id.notice_item_time);
-        TextView tv_comment = (TextView) view.findViewById(R.id.notice_item_comment);
+        tv_comment = (TextView) view.findViewById(R.id.notice_item_comment);
         TextView tv_like = (TextView) view.findViewById(R.id.notice_item_like);
         TextView tv_content = (TextView) view.findViewById(R.id.notice_item_content);
 
@@ -289,6 +301,8 @@ public class LookDetailActivity extends ActivityBase {
                                 commentInfoModel.content = comment_ui;
                                 mCommentInfoModels.add(commentInfoModel);
                                 mAdapter.notifyDataSetChanged();
+
+                                sendEvent();
                             }else{
                                 UIUtil.showToast("评论失败，请稍后再试!");
                             }
@@ -296,6 +310,23 @@ public class LookDetailActivity extends ActivityBase {
                         }
                     });
         }
+    }
+
+    private void sendEvent() {
+        switch (infoType){
+            case InfoType.NOTICE:
+                EventBus.getDefault().post(new NoticeEvent());
+                break;
+            case InfoType.COMMUNITY:
+                EventBus.getDefault().post(new CommunityEvent());
+                break;
+            case InfoType.HOMEWORK:
+                EventBus.getDefault().post(new HomeworkEvent());
+                break;
+        }
+
+        tv_comment.setText(String.format(Locale.CHINA, "评论 %d", ++commentCount));
+
     }
 
     @Override

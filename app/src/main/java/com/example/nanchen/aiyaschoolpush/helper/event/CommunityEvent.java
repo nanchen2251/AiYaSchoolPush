@@ -15,6 +15,7 @@ public class CommunityEvent {
     public CommunityEvent(InfoModel infoModel) {
         mInfoModel = infoModel;
     }
+    public CommunityEvent(){}
 
     public InfoModel getInfoModel() {
         return mInfoModel;

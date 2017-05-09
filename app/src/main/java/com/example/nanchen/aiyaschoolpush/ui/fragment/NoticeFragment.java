@@ -122,6 +122,9 @@ public class NoticeFragment extends FragmentBase {
         if (event.getInfoModel() != null){
             mInfoModels.add(0,event.getInfoModel());
             mAdapter.notifyDataSetChanged();
+        }else{
+            //否则直接刷新
+            mRecyclerView.setRefreshing(true);
         }
     }
 
@@ -210,7 +213,7 @@ public class NoticeFragment extends FragmentBase {
                     @Override
                     public void onClick(View v) {
 //                        Toast.makeText(getActivity(), "你点击了评论，将进入详情页面！", Toast.LENGTH_SHORT).show();
-                        LookDetailActivity.start(getActivity(), mInfoModels.get(position));
+                        LookDetailActivity.start(getActivity(), mInfoModels.get(position),InfoType.NOTICE);
                     }
                 });
             }

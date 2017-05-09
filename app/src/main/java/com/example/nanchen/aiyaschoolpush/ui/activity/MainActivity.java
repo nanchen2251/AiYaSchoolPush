@@ -182,7 +182,7 @@ public class MainActivity extends ActivityBase {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
+//        super.onSaveInstanceState(outState);
         mTab.onSaveInstanceState(outState);
     }
 

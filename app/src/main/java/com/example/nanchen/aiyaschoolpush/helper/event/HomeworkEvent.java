@@ -16,6 +16,8 @@ public class HomeworkEvent {
         this.mInfoModel = infoModel;
     }
 
+    public HomeworkEvent(){}
+
     public InfoModel getInfoModel() {
         return mInfoModel;
     }

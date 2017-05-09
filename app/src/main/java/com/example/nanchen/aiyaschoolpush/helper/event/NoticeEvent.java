@@ -21,6 +21,8 @@ public class NoticeEvent {
         this.mInfoModel = infoModel;
     }
 
+    public NoticeEvent(){}
+
     public int getCommentCount() {
         return mCommentCount;
     }

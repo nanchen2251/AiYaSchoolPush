@@ -19,7 +19,7 @@
         android:layout_weight="1">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/release_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
         <!-- 这个是浮动的提示 ，配合字母栏实现放大浮动提示滑动到哪个字母-->

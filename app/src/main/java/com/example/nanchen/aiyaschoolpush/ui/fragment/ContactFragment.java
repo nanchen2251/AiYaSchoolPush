@@ -61,7 +61,7 @@ public class ContactFragment extends FragmentBase implements OnQuickSideBarTouch
         mSearchBar.setHint("Custom hint");
         mSearchBar.setOnSearchActionListener(this);
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.release_recycler);
         mQuickSideBar = (QuickSideBarView) view.findViewById(R.id.quickSideBarView);
         mQuickSideBarTips = (QuickSideBarTipsView) view.findViewById(R.id.quickSideBarTipsView);
 
