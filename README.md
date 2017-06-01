@@ -1,8 +1,6 @@
 # AiYaSchoolPush
 # 爱吖校推开源持续更新中
 
-## 最近支持线上访问，但注册一天只允许短信20次，所以注册上可能存在问题，大家可以用我的测试者账号：15680802251，密码123456
-
 #### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
