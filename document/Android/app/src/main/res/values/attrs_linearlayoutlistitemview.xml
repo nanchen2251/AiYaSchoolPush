@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LinearLayoutListItemViewStyle">
+        <!--左侧图标 -->
+        <attr name="icon_lefttext" format="reference"/>
+
+		<!--左侧图标 -->
+        <attr name="icon_left" format="reference"/>
+        <!--右侧图标 -->
+        <attr name="icon_right" format="reference"/>
+        <!--右侧图标2 -->
+        <attr name="icon_right2" format="reference"/>        
+        <!--左侧文本 -->
+        <attr name="text_left" format="reference|string"/>
+        <!--左侧文本 -->
+        <attr name="text_left2" format="reference|string"/>
+        <!--左侧角标文本 -->
+        <attr name="text_left_superscript" format="reference|string"/>
+        <!--中间文本 -->
+        <attr name="text_middle" format="reference|string"/>
+        <!--右侧文本 -->
+        <attr name="text_right" format="reference|string"/>
+        <!--右侧文本2 -->
+        <attr name="text_right2" format="reference|string"/>
+        <!--右侧文本3 -->
+        <attr name="text_right3" format="reference|string"/>
+        <!--底部文本 -->
+        <attr name="text_bottom" format="reference|string"/>
+        <!-- 右侧图标是否使用字体文件 -->
+        <attr name="icon_text_right" format="reference|boolean"/>
+        
+        <attr name="text_edittext_content" format="reference|string"/>
+   		<attr name="text_edittext_hint" format="reference|string"/>
+                
+        <!--左侧文本边距 -->
+        <attr name="text_content_margin_left" format="reference|integer"/>
+        <!--右侧文本边距-->
+        <attr name="text_content_margin_right" format="reference|integer"/>
+       
+        <!--左侧文本字体大小 -->
+        <attr name="text_left_fontsize" format="reference|integer"/>
+        <!--左侧文本2字体大小 -->
+        <attr name="text_left2_fontsize" format="reference|integer"/>        
+        <!--中间文本字体大小 -->
+        <attr name="text_middle_fontsize" format="reference|integer"/>
+        <!--右侧文本字体大小-->
+        <attr name="text_right_fontsize" format="reference|integer"/>
+        <!--右侧文本2字体大小-->
+        <attr name="text_right2_fontsize" format="reference|integer"/>
+        <!--右侧文本3字体大小-->
+        <attr name="text_right3_fontsize" format="reference|integer"/>
+        <!--底部文本字体大小-->
+        <attr name="text_bottom_fontsize" format="reference|integer"/>
+        
+        <!--文本字体大小 -->
+        <attr name="text_edittext_fontsize" format="reference|integer"/>
+
+        <!--左侧文本字体颜色 -->
+        <attr name="text_left_fontcolor" format="reference|color"/>
+        <!--左侧文本2字体颜色 -->
+        <attr name="text_left2_fontcolor" format="reference|color"/>        
+        <!--中间文本字体颜色 -->
+        <attr name="text_middle_fontcolor" format="reference|color"/>
+        <!--右侧文本字体颜色-->
+        <attr name="text_right_fontcolor" format="reference|color"/>
+        <!--右侧文本2字体颜色-->
+        <attr name="text_right2_fontcolor" format="reference|color"/>
+        <!--右侧文本3字体颜色-->
+        <attr name="text_right3_fontcolor" format="reference|color"/>
+        <!--底部文本字体颜色-->
+        <attr name="text_bottom_fontcolor" format="reference|color"/>
+        
+        <!--文本字体颜色 -->
+        <attr name="text_edittext_fontcolor" format="reference|color"/>
+        
+        <!--右侧文本背景-->
+        <attr name="text_right_background" format="reference"/>
+                
+        <!--左侧文本左边距 -->
+        <attr name="text_margin_left" format="reference|integer"/>
+        <!--左侧文本右边距 -->
+        <attr name="text_margin_left_right" format="reference|integer"/>
+        <!--左侧文本2左边距 -->
+        <attr name="text_margin_left2_left" format="reference|integer"/>
+        <!--左侧文本2右边距 -->
+        <attr name="text_margin_left2_right" format="reference|integer"/>
+        <!--右侧文本左边距-->
+        <attr name="text_margin_right_left" format="reference|integer"/>
+        <!--右侧文本右边距-->
+        <attr name="text_margin_right" format="reference|integer"/>
+        
+        <!-- 左2文本是否单行显示 -->
+        <attr name="text_left2_single_line" format="reference|boolean"/>
+        <!-- 左侧文本角标是否显示 -->
+        <attr name="text_left_superscript_show" format="reference|boolean"/>
+        <!-- 右侧文本是否单行显示 -->
+        <attr name="text_right_single_line" format="reference|boolean"/>
+        
+        <!-- 设置是否可以单击 -->
+        <attr name="clickable" format="reference|boolean"/>
+        <!--消息数字 -->
+        <attr name="text_messagge_number" format="reference|string"/>
+        
+        <attr name="list_item_style"> 
+            <!--只显示文本,不允许点击 -->
+            <enum name="listitem_text" value="0"/>
+            <!--允许点击 -->
+            <enum name="listitem_menu" value="1"/> 
+        </attr>
+        
+        <attr name="list_item_line_show_model"> 
+            <!--显示:上边线-->
+            <enum name="listitem_show_no_line" value="0"/>            
+            <!--显示:上边线-->
+            <enum name="listitem_show_top_line" value="1"/>
+            <!--显示:下边线-->
+            <enum name="listitem_show_bottom_line" value="2"/>    
+            <!--显示:上下边线-->
+            <enum name="listitem_show_top_bottom_line" value="3"/>              
+        </attr>
+     
+       	<!--上边线高度 单位:px-->
+       	<attr name="list_item_top_line_height_size" format="reference|integer"/>
+       	<!--下边线高度 单位:px-->
+       	<attr name="list_item_bottom_line_height_size" format="reference|integer"/>
+       	
+       	<!--上边线宽度 单位:%-->
+       	<attr name="list_item_top_line_width_size" format="reference|integer"/>  
+       	<!--下边线宽度 单位:%-->
+       	<attr name="list_item_bottom_line_width_size" format="reference|integer"/> 
+       	<!-- Item高度 单位:dp-->
+       	<attr name="list_item_height" format="reference|integer"/>
+       	<!-- 左侧头像尺寸 单位:dp -->
+       	<attr name="list_item_image_size" format="reference|integer"/>
+    </declare-styleable>    
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:tabBackground="@color/main_bg_color1"-->
+    <!--app:tabSelectedTextColor="@color/white1"-->
+    <!--app:tabIndicatorColor="@color/pink"-->
+    <!--android:id="@+id/msg_tabLayout"/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/msg_vp"/>-->
+    <com.example.nanchen.aiyaschoolpush.ui.view.SegmentView
+        android:id="@+id/msg_segmentView"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <FrameLayout
+        android:id="@+id/msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="colorButtonStyle">
+        <!--文本 -->
+        <attr name="text_title" format="reference|string" />
+        <!--字体大小 -->
+        <attr name="fontsize_title" format="reference|integer" />
+        <!--字体颜色 -->
+        <attr name="fontcolor_title" format="reference|color" />
+    </declare-styleable>
+</resources>

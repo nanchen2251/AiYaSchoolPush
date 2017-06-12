@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/notice_item"
+              android:layout_margin="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"
+                android:id="@+id/notice_item_avatar"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试者账号"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:id="@+id/notice_item_name"
+                    android:textColor="@color/green1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:text="2016-10-08 11:13:17"
+                    android:textColor="@color/gray"
+                    android:id="@+id/notice_item_time"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/notice_item_content"
+            android:textColor="@color/black2"
+            android:text="测试通知内容 测试通知内容 测试通知内容 测试通知内容
+            测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容
+             测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容
+              测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容 测试通知内容
+              测试通知内容 测试通知内容 测试通知内容 测试通知内容 "
+            android:textSize="15sp"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="赞 34"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/notice_item_like"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="|"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="评论 50"
+                android:id="@+id/notice_item_comment"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+</LinearLayout>

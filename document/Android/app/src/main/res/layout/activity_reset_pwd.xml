@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white2"
+              android:orientation="vertical">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:id="@+id/reset_pwd_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+            android:tag="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26dp"
+            android:textColor="@color/white1"
+            android:text="@string/icon_text_ok"
+            android:id="@+id/reset_pwd_title_commit"/>
+
+    </com.example.nanchen.aiyaschoolpush.ui.view.TitleView>
+
+    <LinearLayout
+        android:id="@+id/mLL_Mobile"
+        style="@style/style_item_center">
+
+        <TextView
+            style="@style/style_item_text"
+            android:layout_width="74dp"
+            android:layout_marginRight="0dp"
+            android:text="手机号码"/>
+
+        <EditText
+            android:id="@+id/reset_pwd_phone"
+            style="@style/style_edittext_mobile_number"
+            android:layout_marginLeft="0dp"
+            android:hint="请输入已经绑定爱吖校推的手机号码"
+            android:textCursorDrawable="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFFFF"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+            android:background="@color/white2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reset_pwd_code_layout"
+        style="@style/style_item_center">
+
+        <TextView
+            style="@style/style_item_text"
+            android:layout_width="74dp"
+            android:layout_marginRight="0dp"
+            android:text="验证码"/>
+
+        <EditText
+            android:id="@+id/reset_pwd_code"
+            style="@style/style_edittext_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1.0"
+            android:hint="请输入验证码"
+            android:textCursorDrawable="@null"/>
+
+        <Button
+            android:id="@+id/reset_pwd_get_code"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/reset_pwd_btn_bg"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+        <!--         android:layout_weight="0.9" -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/items_bg_row_middle2"/>
+
+    <LinearLayout
+        android:id="@+id/reset_pwd_pwd1_layout"
+        style="@style/style_item_center">
+
+        <EditText
+            android:id="@+id/reset_pwd_pwd1"
+            style="@style/style_edittext_password"
+            android:hint="新密码（6位以上）"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFFFF"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+            android:background="@color/white2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reset_pwd_pwd2_layout"
+        style="@style/style_item_center">
+
+        <EditText
+            android:id="@+id/reset_pwd_pwd2"
+            style="@style/style_edittext_password"
+            android:hint="确认密码"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_location"/>
+
+</LinearLayout>

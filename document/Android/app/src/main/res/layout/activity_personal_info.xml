@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_personal_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg_color"
+    tools:context="com.example.nanchen.aiyaschoolpush.ui.activity.PersonalInfoActivity">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personal_info_title"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.UserInfoView
+        android:id="@+id/personal_info_image"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        widget:clickable_item="true"
+        widget:text_personal_info="我的头像"
+        widget:text_user_name="我的头像"
+        widget:user_info_view_model="model_personal_info_settings"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/personal_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        widget:list_item_bottom_line_height_size="1"
+        widget:list_item_bottom_line_width_size="0"
+        widget:list_item_line_show_model="listitem_show_top_line"
+        widget:list_item_style="listitem_menu"
+        widget:list_item_top_line_height_size="1"
+        widget:list_item_top_line_width_size="0"
+        widget:text_left="我的昵称"
+        widget:text_left_fontcolor="@color/gray9"
+        widget:text_left_fontsize="18"
+        widget:text_margin_left="16"
+        widget:text_margin_right="16"
+        widget:text_right=""
+        widget:text_right_fontcolor="@color/gray3"
+        widget:text_right_fontsize="18"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/personal_info_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        widget:list_item_bottom_line_height_size="1"
+        widget:list_item_bottom_line_width_size="0"
+        widget:list_item_line_show_model="listitem_show_top_line"
+        widget:list_item_style="listitem_menu"
+        widget:list_item_top_line_height_size="1"
+        widget:list_item_top_line_width_size="0"
+        widget:text_left="我的地址"
+        widget:text_left_fontcolor="@color/gray9"
+        widget:text_left_fontsize="18"
+        widget:text_margin_left="16"
+        widget:text_margin_right="16"
+        widget:text_right=""
+        widget:text_right_fontcolor="@color/gray3"
+        widget:text_right_fontsize="18"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/personal_info_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        widget:list_item_bottom_line_height_size="1"
+        widget:list_item_bottom_line_width_size="0"
+        widget:list_item_line_show_model="listitem_show_top_line"
+        widget:list_item_style="listitem_menu"
+        widget:list_item_top_line_height_size="1"
+        widget:list_item_top_line_width_size="0"
+        widget:text_left="密码修改"
+        widget:text_left_fontcolor="@color/gray9"
+        widget:text_left_fontsize="18"
+        widget:text_margin_left="16"
+        widget:text_margin_right="16"
+        widget:text_right=""
+        widget:text_right_fontcolor="@color/gray3"
+        widget:text_right_fontsize="18"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:id="@+id/personal_info_toast"/>
+
+</LinearLayout>

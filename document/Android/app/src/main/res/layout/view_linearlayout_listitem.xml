@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+              xmlns:widget="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/mView_Body"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="50dp"
+              android:orientation="vertical">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.RippleView
+        android:id="@+id/mRV_Item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        widget:rv_type="simpleRipple"
+        widget:rv_zoom="false">
+
+        <LinearLayout
+            android:id="@+id/mLL_Item"
+            style="@style/style_list_item_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mLL_TopLine_Container"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/mView_TopLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray2"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="50dp"
+                >
+
+                <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+                    android:id="@+id/mIv_LeftIconText"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    />
+
+                <com.example.nanchen.aiyaschoolpush.ui.view.RoundImageView
+                    android:id="@+id/mIv_LeftIcon"
+                    style="@style/style_list_item_left_icon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_toRightOf="@+id/mIv_LeftIconText"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    imagecontrol:image_mode="image_round"
+                    />
+
+                <TextView
+                    android:id="@+id/mTv_LeftText"
+                    style="@style/style_list_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@id/mIv_LeftIcon"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:maxWidth="250dp"/>
+
+                <TextView
+                    android:id="@+id/mTv_LeftText2"
+                    style="@style/style_list_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/mTv_LeftText"/>
+
+                <TextView
+                    android:id="@+id/mTv_LeftTextSuperscript"
+                    style="@style/style_list_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/mTv_LeftText"
+                    android:background="@drawable/notify_text"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:id="@+id/mView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/red"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/mIv_RightIcon"
+                    style="@style/style_list_item_right_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@id/mView"/>
+
+                <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+                    android:id="@+id/mIv_RightIconText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/mView"
+                    android:paddingTop="2dp"
+                    android:text="@string/text_arrow_right"
+                    android:textColor="@color/gray3"
+                    android:textSize="17dp"
+                    android:visibility="gone"/>
+
+
+                <com.example.nanchen.aiyaschoolpush.ui.view.RoundImageView
+                    android:id="@+id/mIv_RightIcon2"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@id/mIv_RightIcon"
+                    android:padding="2dp"
+                    android:src="@drawable/default_avatar"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/mTv_MessageNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/mIv_RightIcon2"
+                    android:background="@drawable/notify_text"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxWidth="240dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/mTv_NewMsg"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/mIv_RightIconText"
+                    android:background="@drawable/notify_text"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/mTv_RightText"
+                    style="@style/style_list_item_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@id/mTv_MessageNumber"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:maxLines="1"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/mTv_RightText2"
+                    style="@style/style_list_item_text"
+                    android:layout_width="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="102dp"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:maxLines="1"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/mTv_RightText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_toLeftOf="@id/mIv_RightIconText"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/srs_text"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/mTv_BottomText"
+                    style="@style/style_list_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/mTv_LeftText"
+                    android:layout_centerVertical="false"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_toRightOf="@id/mIv_LeftIcon"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mLL_BottomLine_Container"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/mView_BottomLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.nanchen.aiyaschoolpush.ui.view.RippleView>
+
+</LinearLayout>

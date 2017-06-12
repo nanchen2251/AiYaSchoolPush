@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg_color"
+              android:orientation="vertical">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:id="@+id/mine_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mine_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/default_avatar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.1dp"/>
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_image"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="测试者账号"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mine_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_name"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="四川省成都市锦江区春熙路1号"
+            android:textColor="@color/mine_city"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/mine_revise_data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:icon_lefttext="@string/mine_data"
+        app:list_item_bottom_line_height_size="1"
+        app:list_item_bottom_line_width_size="0"
+        app:list_item_image_size="29"
+        app:list_item_line_show_model="listitem_show_top_line"
+        app:list_item_style="listitem_menu"
+        app:list_item_top_line_height_size="1"
+        app:list_item_top_line_width_size="0"
+        app:text_left="个人信息"
+        app:text_left_fontcolor="@color/gray9"
+        app:text_right_fontcolor="@color/gray"
+        app:text_right_fontsize="16"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/mine_my_baby"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:icon_lefttext="@string/mine_my_baby"
+        app:list_item_bottom_line_height_size="1"
+        app:list_item_bottom_line_width_size="0"
+        app:list_item_image_size="29"
+        app:list_item_line_show_model="listitem_show_top_line"
+        app:list_item_style="listitem_menu"
+        app:list_item_top_line_height_size="1"
+        app:list_item_top_line_width_size="0"
+        app:text_left="我的宝贝"
+        app:text_left_fontcolor="@color/gray9"
+        app:text_right_fontcolor="@color/gray"
+        app:text_right_fontsize="16"/>
+
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/mine_my_room"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        app:icon_lefttext="@string/mine_my_room"
+        app:list_item_bottom_line_height_size="1"
+        app:list_item_bottom_line_width_size="0"
+        app:list_item_image_size="29"
+        app:list_item_line_show_model="listitem_show_top_line"
+        app:list_item_style="listitem_menu"
+        app:list_item_top_line_height_size="1"
+        app:list_item_top_line_width_size="0"
+        app:text_left="我的空间"
+        app:text_left_fontcolor="@color/gray9"
+        app:text_right_fontcolor="@color/gray"
+        app:text_right_fontsize="16"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/mine_cloud_server"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        app:icon_lefttext="@string/mine_server"
+        app:list_item_bottom_line_height_size="1"
+        app:list_item_bottom_line_width_size="0"
+        app:list_item_image_size="29"
+        app:list_item_line_show_model="listitem_show_top_line"
+        app:list_item_style="listitem_menu"
+        app:list_item_top_line_height_size="1"
+        app:list_item_top_line_width_size="0"
+        app:text_left="在线客服"
+        app:text_left_fontcolor="@color/gray9"
+        app:text_right_fontcolor="@color/gray"
+        app:text_right_fontsize="16"/>
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+        android:id="@+id/mine_about"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:icon_lefttext="@string/mine_about"
+        app:list_item_bottom_line_height_size="1"
+        app:list_item_bottom_line_width_size="0"
+        app:list_item_image_size="29"
+        app:list_item_line_show_model="listitem_show_top_line"
+        app:list_item_style="listitem_menu"
+        app:list_item_top_line_height_size="1"
+        app:list_item_top_line_width_size="0"
+        app:text_left="关于我们"
+        app:text_left_fontcolor="@color/gray9"
+        app:text_right_fontcolor="@color/gray"
+        app:text_right_fontsize="16"/>
+
+
+    <Button
+        android:id="@+id/mine_exit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/exit_btn_new"
+        android:text="退出登录"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

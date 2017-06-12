@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    tools:context="com.example.nanchen.aiyaschoolpush.ui.activity.RegisterActivity2">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:id="@+id/register2_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/register2_photo_default"
+            android:id="@+id/register2_head_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="点击设置头像"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_corner_border"
+            android:elevation="7dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/night_biz_pc_account_pwd_icon"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register2_layout_pwd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/ErrorAppearance">
+
+                    <EditText
+                        android:id="@+id/register2_edt_pwd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:hint="密码"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="15sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register2_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/linear_layout_pwd1"
+                android:background="@color/text_hint"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/register2_line1"
+                android:id="@+id/linear_layout_pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/night_biz_pc_account_pwd_icon"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register2_layout_pwd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/ErrorAppearance">
+
+                    <EditText
+                        android:id="@+id/register2_edt_pwd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:hint="确认密码"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="15sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register2_line2"
+                android:layout_below="@+id/linear_layout_pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/text_hint"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/register2_line2"
+                android:id="@+id/linear_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/night_biz_pc_account_username_icon"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register2_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/ErrorAppearance">
+
+                    <EditText
+                        android:id="@+id/register2_edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:hint="真实姓名"
+                        android:inputType="textAutoComplete"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="15sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register2_line3"
+                android:layout_below="@+id/linear_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/text_hint"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/register2_line3"
+                android:id="@+id/linear_layout_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/biz_pc_main_night"/>
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/register2_layout_birthday"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:errorEnabled="true"-->
+                    <!--app:errorTextAppearance="@style/ErrorAppearance">-->
+
+                    <EditText
+                        android:id="@+id/register2_edt_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:hint="请选择生日"
+                        android:inputType="textAutoComplete"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="15dp"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="15sp"/>
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/register2_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_border_radius"
+            android:elevation="5dp"
+            android:text="注   册"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

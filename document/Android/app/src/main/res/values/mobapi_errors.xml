@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mobapi_error_desc_10001">appkey不合法</string>
+    <string name="mobapi_error_desc_10020">接口维护</string>
+    <string name="mobapi_error_desc_10021">接口停用</string>
+
+    <string name="mobapi_error_desc_20401">城市参数为空</string>
+    <string name="mobapi_error_desc_20402">查询不到该城市的天气</string>
+    <string name="mobapi_error_desc_20404">IP地址错误</string>
+    <string name="mobapi_error_desc_20405">查询不到该IP地址相关的天气信息</string>
+
+    <string name="mobapi_error_desc_20201">查询不到数据</string>
+    <string name="mobapi_error_desc_20202">菜谱id不合法</string>
+
+    <string name="mobapi_error_desc_20301">邮编号码为空</string>
+    <string name="mobapi_error_desc_20303">错误的邮编号码查询不到对应的地址</string>
+    <string name="mobapi_error_desc_20304">错误的省份ID</string>
+    <string name="mobapi_error_desc_20305">错误的城市ID</string>
+
+    <string name="mobapi_error_desc_20101">查询不到相关数据</string>
+    <string name="mobapi_error_desc_20102">手机号码格式错误</string>
+
+    <string name="mobapi_error_desc_20501">查询不到相关数据</string>
+    <string name="mobapi_error_desc_20502">MCC为空或不合法</string>
+    <string name="mobapi_error_desc_20503">MNC为空或不合法</string>
+    <string name="mobapi_error_desc_20504">LAC为空或不合法</string>
+    <string name="mobapi_error_desc_20505">CELL为空或不合法</string>
+
+    <string name="mobapi_error_desc_20601">请输入正确的15或18位身份证号码</string>
+    <string name="mobapi_error_desc_20602">查询不到该身份证信息</string>
+
+    <string name="mobapi_error_desc_20701">城市名称参数为空</string>
+    <string name="mobapi_error_desc_20702">查询不到该城市的空气质量</string>
+
+    <string name="mobapi_error_desc_20801">查不到相关IP的数据</string>
+    <string name="mobapi_error_desc_20802">IP参数错误</string>
+
+    <string name="mobapi_error_desc_20901">查询不到相关数据</string>
+    <string name="mobapi_error_desc_20902">key不允许未空</string>
+    <string name="mobapi_error_desc_20903">value不允许未空</string>
+    <string name="mobapi_error_desc_20904">value必须为标准化json格式字符串</string>
+    <string name="mobapi_error_desc_20905">value数据太大</string>
+    <string name="mobapi_error_desc_20906">数据集合不允许未空</string>
+    <string name="mobapi_error_desc_20907">数据集合表数超过上限</string>
+    <string name="mobapi_error_desc_20908">key不是标准的base64编码</string>
+    <string name="mobapi_error_desc_20909">value不是标准的base64编码</string>
+    <string name="mobapi_error_desc_20910">该数据表中数据已满，请更换表</string>
+    <string name="mobapi_error_desc_20911">该用户无数据</string>
+    <string name="mobapi_error_desc_20912">该用户无数据集合</string>
+    <string name="mobapi_error_desc_20913">该数据不存在</string>
+
+    <string name="mobapi_error_desc_21501">手机号码错误</string>
+
+    <string name="mobapi_error_desc_21401">卡号有误,或者旧银行卡，暂时没有收录</string>
+
+    <string name="mobapi_error_desc_21001">查询的日期格式错误,格式:yyyy-MM-dd</string>
+    <string name="mobapi_error_desc_21002">日期参数不能为空</string>
+    <string name="mobapi_error_desc_21003">无对应参数的数据返回</string>
+    <string name="mobapi_error_desc_21004">查询的日期范围有误</string>
+
+    <string name="mobapi_error_desc_21101">查询的日期格式错误,格式:yyyy-MM-dd</string>
+    <string name="mobapi_error_desc_21102">日期参数不能为空</string>
+    <string name="mobapi_error_desc_21103">无对应参数的数据返回</string>
+    <string name="mobapi_error_desc_21104">查询的日期范围有误</string>
+
+    <string name="mobapi_error_desc_21901">查询不到相关数据</string>
+    <string name="mobapi_error_desc_21902">name为空或不合法</string>
+
+    <string name="mobapi_error_desc_21201">查询的日期格式错误,格式:yyyy-MM-dd</string>
+    <string name="mobapi_error_desc_21202">日期参数不能为空</string>
+    <string name="mobapi_error_desc_21203">无对应参数的数据返回</string>
+    <string name="mobapi_error_desc_21204">小时参数不能为空</string>
+    <string name="mobapi_error_desc_21205">小时参数格式错误</string>
+    <string name="mobapi_error_desc_21206">查询的日期范围有误</string>
+
+    <string name="mobapi_error_desc_21801">查询不到相关数据</string>
+    <string name="mobapi_error_desc_21802">day为空或不合法</string>
+
+    <string name="mobapi_error_desc_22001">查询不到相关数据</string>
+    <string name="mobapi_error_desc_22002">name为空或不合法</string>
+
+    <string name="mobapi_error_desc_21601">查询不到相关数据</string>
+    <string name="mobapi_error_desc_21602">name为空或不合法</string>
+
+    <string name="mobapi_error_desc_21701">查询不到相关数据</string>
+    <string name="mobapi_error_desc_21702">汉字为空或格式错误</string>
+
+    <string name="mobapi_error_desc_21301">查询的日期格式错误,格式:yyyy-MM-dd</string>
+    <string name="mobapi_error_desc_21302">出生日期参数不能为空</string>
+    <string name="mobapi_error_desc_21303">无对应参数的数据返回</string>
+    <string name="mobapi_error_desc_21304">小时参数不能为空</string>
+    <string name="mobapi_error_desc_21305">小时参数格式错误</string>
+    <string name="mobapi_error_desc_21306">查询的日期范围有误</string>
+
+    <string name="mobapi_error_desc_22601">彩种名称有误</string>
+    <string name="mobapi_error_desc_22602">暂无此期开彩数据</string>
+
+    <string name="mobapi_error_desc_22301">查询不到数据</string>
+    <string name="mobapi_error_desc_22302">cid不能为空</string>
+
+    <string name="mobapi_error_desc_22401">查询不到数据</string>
+    <string name="mobapi_error_desc_22402">票房地区不能为空或不合法</string>
+
+    <string name="mobapi_error_desc_22101">查询银行参数错误</string>
+    <string name="mobapi_error_desc_22102">查询不到数据</string>
+    <string name="mobapi_error_desc_22103">汇率代码不能为空</string>
+    <string name="mobapi_error_desc_22104">汇率代码查询不到数据</string>
+    <string name="mobapi_error_desc_22105">分页参数错误</string>
+
+    <string name="mobapi_error_desc_22901">查询不到数据</string>
+    <string name="mobapi_error_desc_22902">至少存在一个查询参数</string>
+
+    <string name="mobapi_error_desc_22801">查询不到相关数据</string>
+    <string name="mobapi_error_desc_22802">username不允许为空</string>
+    <string name="mobapi_error_desc_22803">password不允许为空</string>
+    <string name="mobapi_error_desc_22804">历史密码不允许为空</string>
+    <string name="mobapi_error_desc_22805">新密码不允许为空</string>
+    <string name="mobapi_error_desc_22806">此用户名已存在</string>
+    <string name="mobapi_error_desc_22807">用户名或密码错误</string>
+    <string name="mobapi_error_desc_22808">uid不允许为空</string>
+    <string name="mobapi_error_desc_22809">token不允许为空</string>
+    <string name="mobapi_error_desc_22810">用户未登录或token已过期</string>
+    <string name="mobapi_error_desc_22811">用户数据项不允许为空</string>
+    <string name="mobapi_error_desc_22812">用户数据value不允许为空</string>
+    <string name="mobapi_error_desc_22813">用户数据项必须符合base64编码</string>
+    <string name="mobapi_error_desc_22814">用户数据值必须符合base64编码</string>
+    <string name="mobapi_error_desc_22815">用户数据项长度超过最大限制</string>
+    <string name="mobapi_error_desc_22816">用户数据项的值长度超过最大限制</string>
+    <string name="mobapi_error_desc_22817">email不允许为空</string>
+    <string name="mobapi_error_desc_22818">email不符合邮箱格式</string>
+    <string name="mobapi_error_desc_22819">用户名不存在</string>
+    <string name="mobapi_error_desc_22820">随机码错误</string>
+    <string name="mobapi_error_desc_22821">随机码已过期[有效期为1小时内]</string>
+    <string name="mobapi_error_desc_22822">模式数据不合法</string>
+    <string name="mobapi_error_desc_22823">此邮箱已存在</string>
+
+    <string name="mobapi_error_desc_22701">查询不到数据</string>
+    <string name="mobapi_error_desc_22702">查询参数错误</string>
+
+    <string name="mobapi_error_desc_23201">没有相关数据!</string>
+    <string name="mobapi_error_desc_23202">出发站或到达站为空!</string>
+    <string name="mobapi_error_desc_23203">车次不能为空!</string>
+
+    <string name="mobapi_error_desc_23002">航班号不能为空</string>
+    <string name="mobapi_error_desc_23003">航班号错误或查询不到航班信息</string>
+    <string name="mobapi_error_desc_23004">出发城市和到达城市不能为空</string>
+    <string name="mobapi_error_desc_23006">查询不到对应航班信息</string>
+
+    <string name="mobapi_error_desc_23101">查询不到数据</string>
+    <string name="mobapi_error_desc_23102">text不允许为空</string>
+    <string name="mobapi_error_desc_23103">text必须符合base64编码</string>
+    <string name="mobapi_error_desc_23104">text长度超过最大限制!</string>
+
+    <string name="mobapi_error_desc_23301">查询不到数据</string>
+    <string name="mobapi_error_desc_23302">分类id不允许为空</string>
+
+    <string name="mobapi_error_desc_23401">查询不到数据</string>
+    <string name="mobapi_error_desc_23403">品牌名称是空</string>
+    <string name="mobapi_error_desc_23402">车型名称或id为空</string>
+    <string name="mobapi_error_desc_23404">查询不到品牌的车型信息</string>
+    <string name="mobapi_error_desc_23405">查询不到该汽车相关信息</string>
+
+    <string name="mobapi_error_desc_23501">没有相关数据!</string>
+    <string name="mobapi_error_desc_23502">联赛类型不能为空!</string>
+    <string name="mobapi_error_desc_23503">赛季不能为空!</string>
+    <string name="mobapi_error_desc_23504">联赛第几轮次不能为空!</string>
+    <string name="mobapi_error_desc_23505">至少输入一个查询队伍名!</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/discover_titleBar"/>
+
+        <com.daimajia.slider.library.SliderLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/discover_slider"/>
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.WavyLineView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/colorAccent"
+            android:id="@+id/discover_wavyLine"/>
+
+        <com.example.nanchen.aiyaschoolpush.ui.view.LinearLayoutListItemView
+            android:id="@+id/discover_item_weather"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:list_item_bottom_line_height_size="1"
+            app:list_item_bottom_line_width_size="0"
+            app:list_item_image_size="29"
+            app:list_item_line_show_model="listitem_show_top_line"
+            app:list_item_style="listitem_menu"
+            app:list_item_top_line_height_size="1"
+            app:list_item_top_line_width_size="0"
+            app:text_left="爱吖天气"
+            app:text_right="出行必备"
+            app:icon_lefttext="@string/discover_weather"
+            app:text_left_fontcolor="@color/gray9"
+            app:text_right_fontcolor="@color/gray"
+            app:text_right_fontsize="16"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发现"/>
+
+</LinearLayout>

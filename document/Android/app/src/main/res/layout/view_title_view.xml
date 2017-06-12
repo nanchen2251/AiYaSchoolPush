@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:layout_height="wrap_content"
+    android:background="@color/white1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal" >
+        <!-- 左 -->
+        <FrameLayout
+            android:id="@+id/titleview_left_parent"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp" >
+
+            <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+                android:id="@+id/titleview_left_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/orange"
+                android:visibility="gone" />
+
+            <!-- 自定义视图 -->
+
+            <FrameLayout
+                android:id="@+id/titleview_left_custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </FrameLayout>
+        <!-- 中 -->
+
+        <FrameLayout
+            android:id="@+id/titleview_center_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <!-- 标题 -->
+
+            <TextView
+                android:id="@+id/titleview_center_text"
+                style="@style/titleBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- 自定义视图 -->
+
+            <FrameLayout
+                android:id="@+id/titleview_center_custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </FrameLayout>
+        <!-- 右 -->
+
+        <FrameLayout
+            android:id="@+id/titleview_right_parent"
+			android:layout_width="wrap_content"
+			android:minWidth="50dp"
+			android:maxWidth="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp" >
+
+            <com.example.nanchen.aiyaschoolpush.ui.view.IcomoonTextView
+                android:id="@+id/titleview_right_text"
+                style="@style/titleBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"/>
+
+            <!-- 自定义视图 -->
+
+            <FrameLayout
+                android:id="@+id/titleview_right_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF"
+        android:visibility="gone"/>
+    
+</LinearLayout>

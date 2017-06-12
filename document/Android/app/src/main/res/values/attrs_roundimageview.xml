@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="image_mode"> 
+            <!--显示:正常图片-->
+            <enum name="image_normal" value="0"/>            
+            <!--显示:圆形图-->
+            <enum name="image_round" value="1"/>
+            <!--显示:带边框圆形图，圆边的宽度由border_thickness决定-->
+            <enum name="image_round_with_circle" value="2"/>
+            <!--显示:倒角对圆形 -->
+            <enum name="image_round_chamfer" value="3"/>    
+            <!--显示:切圆，画布加边，右下角45度加阴影-->
+            <enum name="image_round_shadow" value="4"/>              
+        </attr>
+
+    </declare-styleable>    
+</resources>
+
+

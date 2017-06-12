@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.nanchen.aiyaschoolpush.ui.activity.WebActivity">
+
+    <com.example.nanchen.aiyaschoolpush.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_titleBar"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        style="@style/NumberProgressBar_Beauty_Red"
+        android:id="@+id/web_progressBar"
+        app:progress_text_size="0sp"
+        app:progress_text_visibility="invisible"
+        app:progress_reached_bar_height="3dp"
+        app:progress_unreached_bar_height="3dp"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"/>
+</LinearLayout>
