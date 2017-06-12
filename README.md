@@ -6,7 +6,7 @@
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
 
-## 近期答辩结束会把论文和一系列设计文档分享给大家。欢迎Star和扫码（在最下面）赞助我喝咖啡呀！！！
+## 毕业所有文档包含PPT全部上传至https://github.com/kingboy2008/AiYaSchoolPush/tree/master/document  。欢迎Star和扫码（在最下面）赞助我喝咖啡呀！！
 <br>
 爱吖校推如同它的名字一样，是一款校园类信息推送交流平台，这么多的家校互动类软件，你选择了我，这是我的幸运。<br>
 从第一次在博客园上写博客到现在，我一次一次地提高博文的质量和代码的可读性，都是为了你们，因为有你们，才有我。<br>
