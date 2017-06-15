@@ -149,7 +149,7 @@ dependencies {
     compile 'com.qiyukf.unicorn:unicorn:2.9.0'
     compile 'com.alibaba:fastjson:1.2.20'
     // 网络访问框架okgo 封装okhttp
-    compile 'com.lzy.net:okgo:+'
+    compile 'com.lzy.net:okgo:2.1.4'
     //版本号使用 + 可以自动引用最新版
 
     // 圆形image
