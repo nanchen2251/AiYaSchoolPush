@@ -3,8 +3,6 @@
 
 #### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
-### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
-### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
 
 ## 毕业所有文档包含PPT全部上传至https://github.com/kingboy2008/AiYaSchoolPush/tree/master/document  。欢迎Star和扫码（在最下面）赞助我喝咖啡呀！！
 <br>
@@ -19,12 +17,9 @@
 #### 项目中的压缩库地址：https://github.com/nanchen2251/CompressHelper
    
 #### * 开源不易，希望给个star或者fork奖励
-#### * 拥抱开源：https://github.com/nanchen2251
-#### * 项目地址：(https://github.com/nanchen2251/AiYaSchoolPush)
 #### * 博客主页：(http://www.cnblogs.com/liushilin/p/5999246.html)
 #### * 开发交流QQ群：（118116509）
 #### * 有问题请联系邮箱：（liushilin520@foxmail.com）
-#### * app体验下载：（https://github.com/nanchen2251/AiYaSchoolPush/blob/master/AiYa-SchoolPush-v2.2.2.apk)
 #### * app下载后无法登陆的原因：由于本人暂时不能承担阿里云服务器的费用，大家可以下载代码观看，楼主后面会使用花生壳包装域名，以让大家观看效果，有问题还是加入QQ群大家一起讨论吧~
 #### * 如果出现启动闪退请把ReleaseActivity的微视频入口注释掉，因为目前微视频的ffmpeg的so文件不完善，所以不支持部分机型；
 
@@ -81,13 +76,50 @@ V2.2.1<br>
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen11.jpg) 
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen12.jpg) 
     ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/screen13.jpg) 
-    
-## 关于作者
-    南尘<br>
-    四川成都<br>
-    [博客园](http://www.cnblogs.com/liushilin/)
+
     
 ## 你也可以请我喝杯咖啡
                **支付宝扫一扫 向我付款**                                             **你也可以微信 向我付款**<br>
    ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/apay.png) 
                   ![](https://github.com/nanchen2251/AiYaSchoolPush/blob/master/photo/wxpay.png)
+                  
+### 关于作者
+    南尘<br>
+    四川成都<br>
+    [其它开源](https://github.com/nanchen2251/)<br>
+    [博客园](http://www.cnblogs.com/liushilin/)
+    
+#### 有码走遍天下 无码寸步难行（引自网络）
+
+> 1024 - 梦想，永不止步!  
+爱编程 不爱Bug  
+爱加班 不爱黑眼圈  
+固执 但不偏执  
+疯狂 但不疯癫  
+生活里的菜鸟  
+工作中的大神  
+身怀宝藏，一心憧憬星辰大海  
+追求极致，目标始于高山之巅  
+一群怀揣好奇，梦想改变世界的孩子  
+一群追日逐浪，正在改变世界的极客  
+你们用最美的语言，诠释着科技的力量  
+你们用极速的创新，引领着时代的变迁  
+  
+------至所有正在努力奋斗的程序猿们！加油！！  
+    
+## Licenses
+```
+ Copyright 2017 nanchen(刘世麟)
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+```
