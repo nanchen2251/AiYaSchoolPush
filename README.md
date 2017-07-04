@@ -1,5 +1,7 @@
 # AiYaSchoolPush
-# 爱吖校推开源持续更新中
+#### 笔者最新参赛 RxJava 2.x 教程系列，希望支持：http://www.apkbus.com/blog-898535-68185.html
+
+# 目前爱吖校推停止维护
 
 #### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
 ### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
