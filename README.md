@@ -1,5 +1,6 @@
 # AiYaSchoolPush
-#### 笔者最新参赛 RxJava 2.x 教程系列，希望支持：http://www.apkbus.com/blog-898535-68185.html
+#### 笔者最新 RxJava 2.x 教程系列代码，多多支持（含技术Blog）:https://github.com/nanchen2251/RxJava2Examples
+
 
 # 目前爱吖校推停止维护
 
