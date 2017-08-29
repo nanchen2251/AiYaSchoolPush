@@ -1,13 +1,11 @@
 # AiYaSchoolPush
-#### 笔者最新 RxJava 2.x 教程系列代码，多多支持（含技术Blog）:https://github.com/nanchen2251/RxJava2Examples
-
-
 # 目前爱吖校推停止维护
 
-### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
-### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
+#### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
+#### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
+毕业所有文档包含PPT全部上传至https://github.com/nanchen2251/AiYaSchoolPush/tree/master/document  。<br>
 
- 毕业所有文档包含PPT全部上传至https://github.com/nanchen2251/AiYaSchoolPush/tree/master/document  。<br>
+
 爱吖校推如同它的名字一样，是一款校园类信息推送交流平台，这么多的家校互动类软件，你选择了我，这是我的幸运。<br>
 从第一次在博客园上写博客到现在，我一次一次地提高博文的质量和代码的可读性，都是为了你们，因为有你们，才有我。<br>
 我从一个一个的demo到从0开始做这个app，一路历经艰难险阻，期待你与我进行心灵交流。<br>
