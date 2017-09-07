@@ -18,7 +18,7 @@
    
 #### * 开源不易，希望给个star或者fork奖励
 #### * 博客主页：(http://www.cnblogs.com/liushilin/p/5999246.html)
-#### * 开发交流QQ群：（118116509）
+#### * 开发交流QQ群：118116509 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=8764b119b3aeb121863fd0177f134db3948d17a7f9b551c3e3c0f903b561d3a1"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Android 神探侧漏交流群" title="Android 神探侧漏交流群"></a>(点击图标即可加入)
 #### * 有问题请联系邮箱：（liushilin520@foxmail.com）
 #### * app下载后无法登陆的原因：由于本人暂时不能承担阿里云服务器的费用，大家可以下载代码观看，楼主后面会使用花生壳包装域名，以让大家观看效果，有问题还是加入QQ群大家一起讨论吧~
 #### * 如果出现启动闪退请把ReleaseActivity的微视频入口注释掉，因为目前微视频的ffmpeg的so文件不完善，所以不支持部分机型；
