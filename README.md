@@ -1,6 +1,9 @@
 # AiYaSchoolPush
 # 目前爱吖校推停止维护
 
+#### 号外：听说「nanchen」搞了一个 Android 开发者的免费福利，不行你看：[给 Android 开发者的一点福利：免费模拟面试](http://mp.weixin.qq.com/s/WRdSmGxwDp-CpQcSlmJYlg)
+
+
 #### 该APP后台由于没有在线上搭建，所以在笔者服务器电脑没打开服务器的时候会出现无法访问，故作者采用代码家开源接口重写APP，
 #### 从零搭建Retrofit+Rx+MVP框架APP,欢迎关注：https://github.com/nanchen2251/AiYaGirl
 毕业所有文档包含PPT全部上传至https://github.com/nanchen2251/AiYaSchoolPush/tree/master/document  。<br>
